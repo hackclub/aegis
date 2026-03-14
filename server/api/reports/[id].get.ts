@@ -1,4 +1,4 @@
-import { getReportWithAccessCheck, isAdmin, isGlobalAdmin, parseParticipants } from "../../utils/permissions";
+import { getReportWithAccessCheck, isAdmin, isGlobalAdmin } from "../../utils/permissions";
 import { requireParam } from "../../utils/api";
 import type { UserRole } from "../../../prisma/db";
 import { prisma } from "../../../prisma/db";
@@ -64,14 +64,13 @@ export default defineEventHandler(async (event) => {
     },
   }));
 
-  const parsedParticipants = parseParticipants(report.participants);
-  const participantIds = parsedParticipants.map((p) => p.userId);
+  const participantUserIds = report.participants.map((p) => p.userId);
   const users = await prisma.user.findMany({
-    where: { id: { in: participantIds } },
+    where: { id: { in: participantUserIds } },
     select: { id: true, verified: true },
   });
   const verifiedMap = new Map(users.map((u) => [u.id, u.verified]));
-  const participants = parsedParticipants.map((p) => ({
+  const participants = report.participants.map((p) => ({
     userId: p.userId,
     username: p.username,
     verified: verifiedMap.get(p.userId) ?? false,

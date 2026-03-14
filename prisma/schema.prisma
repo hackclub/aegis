@@ -33,6 +33,7 @@ model User {
   reports    Report[]
   activities Activity[]
   programs   ProgramMember[]
+  reportParticipations ReportParticipant[]
   notificationPreferences NotificationPreference[]
 }
 
@@ -62,7 +63,6 @@ model Report {
   description  String
   severity     Severity
   status       ReportStatus @default(NEW)
-  participants Json         @default("[]")
   createdAt    DateTime     @default(now())
   updatedAt    DateTime     @updatedAt
 
@@ -89,10 +89,27 @@ model Report {
   programId     String?
   activities    Activity[]
   attachmentRecords Attachment[]
+  participants  ReportParticipant[]
 
   @@index([submittedById])
   @@index([programId])
   @@index([id])
+}
+
+model ReportParticipant {
+  id       String   @id @default(uuid())
+  role     String
+  username String
+  joinedAt DateTime @default(now())
+
+  report   Report @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId String
+  user     User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId   String
+
+  @@unique([reportId, userId])
+  @@index([reportId])
+  @@index([userId])
 }
 
 model Activity {

@@ -35,13 +35,6 @@ export async function createReport(data: CreateReportData) {
       if (p) members = p.members.map((m) => m.user);
     }
 
-    const participants = members.map((m) => ({
-      userId: m.id,
-      username: m.username || "unknown",
-      role: "triage" as const,
-      joinedAt: new Date().toISOString(),
-    }));
-
     const report = await tx.report.create({
       data: {
         title: data.title,
@@ -57,9 +50,14 @@ export async function createReport(data: CreateReportData) {
         isUnlisted: data.isUnlisted || false,
         targetName: data.targetName || null,
         targetUrl: data.targetUrl || null,
-        participants,
       },
     });
+
+    if (members.length) {
+      await tx.reportParticipant.createMany({
+        data: members.map((m) => ({ reportId: report.id, userId: m.id, username: m.username || "unknown", role: "triage" })),
+      });
+    }
 
     const attachmentList = data.attachments || [];
     for (const att of attachmentList) {

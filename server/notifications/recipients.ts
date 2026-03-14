@@ -13,11 +13,11 @@ export async function getRecipients(type: RecipientType, p: Params, excludeId: s
       break;
     }
     case "report_participants": {
-      const r = await prisma.report.findUnique({ where: { id: p.reportId }, select: { submittedById: true, participants: true } });
-      if (r) {
-        const parts = (r.participants as Array<{ userId: string }>) || [];
-        ids = [r.submittedById, ...parts.map((x) => x.userId)];
-      }
+      const r = await prisma.report.findUnique({
+        where: { id: p.reportId },
+        select: { submittedById: true, participants: { select: { userId: true } } },
+      });
+      if (r) ids = [r.submittedById, ...r.participants.map((x) => x.userId)];
       break;
     }
     case "program_admins": {
