@@ -20,9 +20,9 @@ export async function r2upload(file: Buffer, key: string, contentType: string): 
   return `/api/files/${key.slice(8)}`;
 }
 
-export async function r2get(key: string): Promise<Buffer> {
+export async function r2get(key: string): Promise<{ stream: ReadableStream; contentLength?: number }> {
   const res = await client().send(new GetObjectCommand({ Bucket: useRuntimeConfig().r2.bucketName, Key: key, ...enc() }));
-  return Buffer.from(await res.Body!.transformToByteArray());
+  return { stream: res.Body!.transformToWebStream(), contentLength: res.ContentLength };
 }
 
 export async function r2delete(key: string): Promise<void> {
