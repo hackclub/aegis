@@ -17,18 +17,18 @@
 <script setup lang="ts">
 const programs = [
   {
-    slug: "campfire",
-    icon: "https://cdn.hackclub.com/019c1a5b-8890-798a-b45b-f0716e8841ec/campfire-square.png",
-    title: "Campfire",
-    desc: "A worldwide game jam happening in 200+ cities on February 28th & March 1st. Find an event in your city!",
-    bgImg: "https://cdn.hackclub.com/019c1a5b-ba5f-7788-9e7b-6031518095bb/campfire.png",
+    slug: "flavortown",
+    icon: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/4cb9a1d8b4650970_image__4_.png",
+    title: "Flavortown",
+    desc: "Hack on personal coding projects, ship them and get free prizes. Running from December 22nd to March 31st.",
+    bgImg: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/c2cba3b081ea5943_frame_1.png",
   },
   {
-    slug: "shipwrecked",
-    icon: "https://cdn.hackclub.com/019c1a5c-9133-7dd8-a21f-91840ff41099/2026_02_01_0ln_Kleki.png",
-    title: "Shipwrecked",
-    desc: "Shipwrecked is a game jam where you build a game in 48 hours.",
-    bgImg: "https://cdn.hackclub.com/019c1a5d-841d-7558-97f9-89402e831f58/2026_02_01_0lo_Kleki.png",
+    slug: "sleepover",
+    icon: "https://cdn.hackclub.com/019cb51b-3772-71e5-ab48-da8f5c8d2ffa/image.png",
+    title: "Sleepover",
+    desc: "Build projects, fly to an all girls hackathon in Chicago.",
+    bgImg: "https://cdn.hackclub.com/019cb51b-3a1a-742e-b765-6d80a1f8ecd9/image.png",
   },
   {
     slug: "slack",
@@ -45,18 +45,18 @@ const programs = [
     bgImg: "https://cdn.hackclub.com/019c1a60-75a5-7de7-a49d-62c62fb06f32/2026_02_01_0ls_Kleki.png",
   },
   {
-    slug: "clubs",
-    icon: "https://assets.hackclub.com/icon-rounded.png",
-    title: "Hack Clubs",
-    desc: "Don't run your coding club alone. Make it a Hack Club and get free meeting content, stickers, and digital tools.",
-    bgImg: "https://cdn.hackclub.com/019c1a61-3c88-745c-9460-f72839879c6f/2026_02_01_0ls_Kleki.png",
+    slug: "stasis",
+    icon: "https://cdn.hackclub.com/019cb70b-096a-7412-9625-9fa77be951b1/image__192_.png",
+    title: "Stasis",
+    desc: "Make hardware projects -> fly to a hardware hackathon in Austin, Texas.",
+    bgImg: "https://cdn.hackclub.com/019cb713-1e85-7916-a0f4-555d6aa0fa4a/image_1__13_.png",
   },
   {
-    slug: "boba",
-    icon: "https://cdn.hackclub.com/019c1a61-d3ae-7f48-911d-d897225b1e7f/2026_02_01_0lt_Kleki.png",
-    title: "Boba Drops",
-    desc: "Build your first website to get a free boba tea, or run a workshop to help others build theirs!",
-    bgImg: "https://cdn.hackclub.com/019c1a62-3de9-7498-a2c8-32515c55ef0f/2026_02_01_0lu_Kleki.png",
+    slug: "fallout",
+    icon: "https://cdn.hackclub.com/019ce03a-13c1-7723-b8be-85d1e96268d2/soup.webp",
+    title: "Fallout",
+    desc: "Build hardware projects, track your hours, then attend a hardware hackathon in Shenzhen!",
+    bgImg: "https://cdn.hackclub.com/019ce02f-ed7b-7b9f-bf91-84503a43c535/bg.webp",
   },
 ];
 </script>
