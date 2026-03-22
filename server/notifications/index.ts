@@ -94,7 +94,7 @@ async function getChannels(userId: string, type: NotificationType): Promise<Noti
   const validPrefs = prefs.filter((p) => isNotificationChannel(p.channel));
   if (!validPrefs.length) return ["email"];
 
-  return validPrefs.filter((p) => p.enabled).map((p) => p.channel);
+  return validPrefs.filter((p) => p.enabled).map((p) => p.channel as NotificationChannel);
 }
 
 export { type NotificationType } from "./config";

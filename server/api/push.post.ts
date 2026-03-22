@@ -12,7 +12,7 @@ export default defineEventHandler(async (e) => {
   const url = new URL(dsn);
   const projectId = url.pathname.replace("/", "");
 
-  const header = body.split("\n")[0];
+  const header = body.split("\n")[0]!;
   let envelope: { dsn?: { host?: string } };
   try {
     envelope = JSON.parse(header);

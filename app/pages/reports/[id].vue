@@ -412,6 +412,9 @@ interface Report {
     canReassignProgram: boolean;
     canDisclose: boolean;
     isOwner: boolean;
+    isProgramAdmin: boolean;
+    isGlobalAdmin: boolean;
+    isAdmin: boolean;
     isTriage: boolean;
     needsBreakGlass: boolean;
   };

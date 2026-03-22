@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
   const rows = [["ID", "Title", "Program", "Status", "Severity", "Reporter", "Created At"].join(",")];
 
   for (const r of reports) {
-    const row = [r.id, `"${r.title.replace(/"/g, '""')}"`, r.program.title, r.status, r.severity, r.submittedBy.username || r.submittedBy.email, r.createdAt.toISOString()];
+    const row = [r.id, `"${r.title.replace(/"/g, '""')}"`, r.program?.title ?? "N/A", r.status, r.severity, r.submittedBy.username || r.submittedBy.email, r.createdAt.toISOString()];
     rows.push(row.join(","));
   }
 

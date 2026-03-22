@@ -36,7 +36,7 @@ if (props.error?.statusCode === 500) {
   Sentry.captureException(err, {
     extra: {
       statusCode: props.error.statusCode,
-      url: props.error.url,
+      url: (props.error as any).url,
       stack: props.error.stack,
     },
   });

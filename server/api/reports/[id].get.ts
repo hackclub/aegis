@@ -97,7 +97,7 @@ export default defineEventHandler(async (event) => {
   };
 });
 
-function returnDisclosed(report: Record<string, unknown> & { activities?: Array<Record<string, unknown> & { author: Record<string, unknown> }> }) {
+function returnDisclosed(report: Record<string, any> & { activities?: Array<Record<string, any> & { author: Record<string, any> }> }) {
   const base = {
     id: report.id,
     title: report.title,

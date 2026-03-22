@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
     },
   });
 
-  return p.members.map((m) => ({
+  return (p as any).members.map((m: any) => ({
     id: m.user.id,
     email: m.user.email,
     username: m.user.username,
