@@ -17,7 +17,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.1013.0",
+    "@aws-sdk/client-s3": "^3.1014.0",
     "@nuxt/eslint": "^1.15.2",
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/icon": "^2.2.1",
@@ -25,8 +25,8 @@
     "@prisma/client": "^7.5.0",
     "@sentry/nuxt": "^10.45.0",
     "@tailwindcss/vite": "^4.2.2",
-    "eslint": "^10.0.3",
-    "marked": "^17.0.4",
+    "eslint": "^10.1.0",
+    "marked": "^17.0.5",
     "nprogress": "^0.2.0",
     "nuxt": "^4.4.2",
     "nuxt-auth-utils": "^0.5.29",
