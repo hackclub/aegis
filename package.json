@@ -14,6 +14,7 @@
     "db:seed": "bunx prisma db seed",
     "db:drop": "bunx prisma migrate reset",
     "format": "prettier --write .",
+    "check": "bunx nuxt typecheck",
     "lint": "eslint . --fix"
   },
   "dependencies": {
