@@ -24,7 +24,6 @@
     "@nuxt/icon": "^2.2.1",
     "@prisma/adapter-pg": "^7.5.0",
     "@prisma/client": "^7.5.0",
-    "@sentry/nuxt": "^10.46.0",
     "@tailwindcss/vite": "^4.2.2",
     "@types/nprogress": "^0.2.3",
     "@vercel/analytics": "^2.0.1",
@@ -52,7 +51,6 @@
   "trustedDependencies": [
     "@parcel/watcher",
     "@prisma/engines",
-    "@sentry/cli",
     "esbuild",
     "prisma",
     "unrs-resolver"

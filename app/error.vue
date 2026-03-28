@@ -25,22 +25,8 @@
 
 <script setup lang="ts">
 import type { NuxtError } from "#app";
-import * as Sentry from "@sentry/nuxt";
-
 const props = defineProps<{ error: NuxtError }>();
 const isDev = import.meta.dev;
-
-if (props.error?.statusCode === 500) {
-  const err = new Error(props.error.message || "Internal Server Error");
-  err.name = props.error.statusMessage || "ServerError";
-  Sentry.captureException(err, {
-    extra: {
-      statusCode: props.error.statusCode,
-      url: getErrorUrl(props.error),
-      stack: props.error.stack,
-    },
-  });
-}
 
 const title = computed(() => {
   const code = props.error?.statusCode;
@@ -53,9 +39,4 @@ const title = computed(() => {
 
 const handleError = () => clearError({ redirect: "/" });
 const reload = () => window.location.reload();
-
-function getErrorUrl(error: NuxtError): string | undefined {
-  const url = (error as { url?: unknown }).url;
-  return typeof url === "string" ? url : undefined;
-}
 </script>
