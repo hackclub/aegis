@@ -114,7 +114,6 @@ export default defineNuxtConfig({
     },
   },
 
-
   routeRules: {
     "/": { appLayout: "landing" },
     "/auth/**": { appLayout: "auth" },
