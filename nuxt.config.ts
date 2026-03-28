@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     ],
   },
 
-  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "nuxt-auth-utils", "@sentry/nuxt/module"],
+  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "nuxt-auth-utils"],
 
   app: {
     head: {
@@ -102,9 +102,6 @@ export default defineNuxtConfig({
     },
     public: {
       live: process.env.IN_BETA === "true",
-      sentry: {
-        dsn: process.env.SENTRY_DSN,
-      },
     },
   },
 
@@ -115,16 +112,6 @@ export default defineNuxtConfig({
     experimental: {
       database: true,
     },
-  },
-
-  sentry: {
-    org: "hack-club",
-    project: "aegis-web",
-    autoInjectServerSentry: "top-level-import",
-  },
-
-  sourcemap: {
-    client: "hidden",
   },
 
   routeRules: {
