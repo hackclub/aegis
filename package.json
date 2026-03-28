@@ -27,6 +27,7 @@
     "@sentry/nuxt": "^10.46.0",
     "@tailwindcss/vite": "^4.2.2",
     "@types/nprogress": "^0.2.3",
+    "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "eslint": "^10.1.0",
     "marked": "^17.0.5",
