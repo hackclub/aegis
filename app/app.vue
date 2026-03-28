@@ -4,9 +4,11 @@
       <NuxtPage />
     </NuxtLayout>
   </NuxtErrorBoundary>
+  <Analytics />
   <SpeedInsights />
 </template>
 <script setup lang="ts">
+import { Analytics } from "@vercel/analytics/vue";
 import { SpeedInsights } from "@vercel/speed-insights/vue";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
