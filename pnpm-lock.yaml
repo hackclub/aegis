@@ -82,6 +82,9 @@ importers:
       '@iconify-json/tabler':
         specifier: ^1.2.33
         version: 1.2.33
+      dotenv:
+        specifier: ^17.3.1
+        version: 17.3.1
       vite-plus:
         specifier: 'catalog:'
         version: 0.1.14(@types/node@25.5.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.1)(yaml@2.8.3))(yaml@2.8.3)

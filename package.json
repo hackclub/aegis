@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@iconify-json/tabler": "^1.2.33",
+    "dotenv": "^17.3.1",
     "vite-plus": "catalog:"
   },
   "prisma": {
