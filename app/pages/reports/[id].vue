@@ -28,7 +28,13 @@
           <Icon name="tabler:world" size="24" class="text-accent shrink-0" />
           <div>
             <p class="font-medium">This report has been publicly disclosed</p>
-            <p class="text-sm text-gray-400">{{ report.disclosureType === "FULL" ? "The team opted for a full disclosure. This means that all contents of the report are visible, including description, comments, and attachments." : "The team opted for a summarized disclosure. This means that only summaries provided by the program and reporter are visible. This helps protect sensitive information while still providing transparency." }}</p>
+            <p class="text-sm text-gray-400">
+              {{
+                report.disclosureType === "FULL"
+                  ? "The team opted for a full disclosure. This means that all contents of the report are visible, including description, comments, and attachments."
+                  : "The team opted for a summarized disclosure. This means that only summaries provided by the program and reporter are visible. This helps protect sensitive information while still providing transparency."
+              }}
+            </p>
           </div>
         </div>
         <a v-if="report.githubAdvisory" :href="report.githubAdvisory" target="_blank" class="bg-surface border border-border p-4 flex items-center gap-3 hover:border-accent transition-colors">

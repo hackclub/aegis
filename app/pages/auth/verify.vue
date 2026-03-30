@@ -8,7 +8,11 @@
           <input id="code" v-model="code" type="text" required maxlength="6" placeholder="000000" :disabled="busy" class="w-full px-4 py-3 font-mono bg-surface border border-border focus:outline-none focus:border-accent transition-colors text-center text-2xl tracking-widest disabled:opacity-50" />
         </div>
 
-        <button type="submit" :disabled="busy || code.length !== 6" class="w-full py-3 bg-accent text-black disabled:opacity-75 disabled:cursor-not-allowed font-medium transition-transform active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100 flex items-center justify-center gap-2 cursor-pointer">
+        <button
+          type="submit"
+          :disabled="busy || code.length !== 6"
+          class="w-full py-3 bg-accent text-black disabled:opacity-75 disabled:cursor-not-allowed font-medium transition-transform active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100 flex items-center justify-center gap-2 cursor-pointer"
+        >
           <Spinner v-if="busy" size="24px" />
           {{ busy ? "" : "Continue" }}
         </button>

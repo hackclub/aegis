@@ -7,7 +7,21 @@
     </template>
 
     <template v-else-if="data">
-      <ProfileHeader :username="data.user.username!" :verified="data.user.verified" :joined="joined" :description="data.user.description" :website="data.user.website" :github="data.user.github" :public-email="data.user.publicEmail" :own="own" :edit="edit" class="mb-8" @edit="edit = true" @cancel="edit = false" @saved="onSaved" />
+      <ProfileHeader
+        :username="data.user.username!"
+        :verified="data.user.verified"
+        :joined="joined"
+        :description="data.user.description"
+        :website="data.user.website"
+        :github="data.user.github"
+        :public-email="data.user.publicEmail"
+        :own="own"
+        :edit="edit"
+        class="mb-8"
+        @edit="edit = true"
+        @cancel="edit = false"
+        @saved="onSaved"
+      />
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
         <ProfileStat :value="data.stats.total" label="Reports Submitted" icon="tabler:send" color="text-accent" />

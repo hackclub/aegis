@@ -83,7 +83,9 @@ export async function sendConfirm(email: string, isOldEmail: boolean): Promise<v
     return;
   }
 
-  const message = isOldEmail ? `Your Aegis account email has been changed to a new email address. If you do not recognize this, please contact us immediately at <a href="mailto:security@hackclub.com">security@hackclub.com</a> so we can help recover your account.` : "Your email has been successfully updated. You can now use this email to log in.";
+  const message = isOldEmail
+    ? `Your Aegis account email has been changed to a new email address. If you do not recognize this, please contact us immediately at <a href="mailto:security@hackclub.com">security@hackclub.com</a> so we can help recover your account.`
+    : "Your email has been successfully updated. You can now use this email to log in.";
 
   await $fetch("https://api.resend.com/emails", {
     method: "POST",

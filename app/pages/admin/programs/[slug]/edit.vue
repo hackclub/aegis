@@ -36,7 +36,12 @@
 
         <div>
           <label class="block text-sm text-gray-400 mb-1">Content (Markdown)</label>
-          <textarea v-model="form.content" rows="8" placeholder="## Scope&#10;&#10;List your in-scope assets here...&#10;&#10;## Rules&#10;&#10;- No automated scanning&#10;- Report responsibly" class="w-full px-4 py-2 bg-transparent border border-border text-white placeholder-gray-500 focus:outline-none focus:border-accent transition-colors resize-y" />
+          <textarea
+            v-model="form.content"
+            rows="8"
+            placeholder="## Scope&#10;&#10;List your in-scope assets here...&#10;&#10;## Rules&#10;&#10;- No automated scanning&#10;- Report responsibly"
+            class="w-full px-4 py-2 bg-transparent border border-border text-white placeholder-gray-500 focus:outline-none focus:border-accent transition-colors resize-y"
+          />
         </div>
 
         <div v-if="err" class="text-danger text-sm">{{ err }}</div>
