@@ -13,9 +13,9 @@
     "db:migrate": "bunx prisma migrate dev --name init",
     "db:seed": "bunx prisma db seed",
     "db:drop": "bunx prisma migrate reset",
-    "format": "prettier --write .",
+    "format": "vp fmt .",
     "check": "bunx nuxt typecheck",
-    "lint": "eslint . --fix"
+    "lint": "vp lint . --fix"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1019.0",
@@ -28,12 +28,12 @@
     "@types/nprogress": "^0.2.3",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "eslint": "^10.1.0",
     "marked": "^17.0.5",
     "nprogress": "^0.2.0",
     "nuxt": "^4.4.2",
     "nuxt-auth-utils": "^0.5.29",
     "prisma": "^7.5.0",
+    "rolldown": "1.0.0-rc.12",
     "tailwindcss": "^4.2.2",
     "vue": "^3.5.31",
     "vue-router": "^5.0.4",
@@ -41,8 +41,7 @@
   },
   "devDependencies": {
     "@iconify-json/tabler": "^1.2.33",
-    "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.8.1"
+    "vite-plus": "catalog:"
   },
   "prisma": {
     "seed": "bun prisma/seed.ts"
