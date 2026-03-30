@@ -8,7 +8,15 @@
 
       <div>
         <label for="title" class="block text-sm font-medium text-gray-400 mb-2"> Title <span class="text-danger">*</span> </label>
-        <input id="title" v-model="form.title" type="text" required placeholder="A clear and concise title includes the type of vulnerability and the impacted area." class="w-full px-4 py-3 bg-surface border border-border focus:outline-none focus:border-accent transition-colors" :class="{ 'border-danger': errors.title }" />
+        <input
+          id="title"
+          v-model="form.title"
+          type="text"
+          required
+          placeholder="A clear and concise title includes the type of vulnerability and the impacted area."
+          class="w-full px-4 py-3 bg-surface border border-border focus:outline-none focus:border-accent transition-colors"
+          :class="{ 'border-danger': errors.title }"
+        />
         <p v-if="errors.title" class="text-danger text-sm mt-1">{{ errors.title }}</p>
       </div>
 
@@ -49,7 +57,15 @@
 
       <div>
         <label for="description" class="block text-sm font-medium text-gray-400 mb-2"> What is the vulnerability? In clear steps, how do you reproduce it? <span class="text-danger">*</span> </label>
-        <textarea id="description" v-model="form.description" required rows="8" placeholder="Provide detailed steps to reproduce:&#10;1. Navigate to...&#10;2. Click on...&#10;3. Observe that...&#10;&#10;Include any payload, headers, or code used." class="w-full px-4 py-3 bg-surface border border-border focus:outline-none focus:border-accent transition-colors resize-none font-mono text-sm" :class="{ 'border-danger': errors.description }" />
+        <textarea
+          id="description"
+          v-model="form.description"
+          required
+          rows="8"
+          placeholder="Provide detailed steps to reproduce:&#10;1. Navigate to...&#10;2. Click on...&#10;3. Observe that...&#10;&#10;Include any payload, headers, or code used."
+          class="w-full px-4 py-3 bg-surface border border-border focus:outline-none focus:border-accent transition-colors resize-none font-mono text-sm"
+          :class="{ 'border-danger': errors.description }"
+        />
         <div class="flex justify-between text-xs mt-1">
           <p v-if="errors.description" class="text-danger">{{ errors.description }}</p>
           <p class="text-gray-500 ml-auto">Markdown supported</p>

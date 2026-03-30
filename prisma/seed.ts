@@ -1,6 +1,4 @@
-import { PrismaClient } from "./generated/client";
-
-const db = new PrismaClient();
+import { prisma } from "./db";
 
 const programs = [
   {
@@ -13,7 +11,7 @@ const programs = [
   },
 ];
 
-for (const p of programs) await db.program.upsert({ where: { slug: p.slug }, update: {}, create: p });
+for (const p of programs) await prisma.program.upsert({ where: { slug: p.slug }, update: {}, create: p });
 
 console.log("Seeded default programs");
-await db.$disconnect();
+await prisma.$disconnect();

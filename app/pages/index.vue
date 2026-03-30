@@ -19,7 +19,10 @@
       </div>
       <p class="text-sm sm:text-base text-gray-400 mb-6 md:mb-8 font-mono leading-relaxed">We have more than 100+ programs in total, you can view all of them on the <NuxtLink to="/programs" class="text-accent underline">programs page</NuxtLink>.</p>
       <h2 class="text-2xl sm:text-3xl font-bold mb-3 md:mb-4">Payout Tiers</h2>
-      <p class="text-sm sm:text-base text-gray-400 mb-6 md:mb-8 font-mono leading-relaxed">As a thank you for helping us keep Hack Club secure, we are offering bounties for finding vulnerabilities in our systems. Payouts are based on demonstrated real world impact, not theoretical risk. All reports must include a valid proof of concept and clear impact analysis to qualify. Find the row that matches your finding, that's your base payout.</p>
+      <p class="text-sm sm:text-base text-gray-400 mb-6 md:mb-8 font-mono leading-relaxed">
+        As a thank you for helping us keep Hack Club secure, we are offering bounties for finding vulnerabilities in our systems. Payouts are based on demonstrated real world impact, not theoretical risk. All reports must include a valid proof of concept and clear impact analysis to qualify. Find the row that matches
+        your finding, that's your base payout.
+      </p>
 
       <div class="overflow-x-auto mb-6 md:mb-8">
         <table class="w-full text-sm font-mono border border-border">
@@ -126,7 +129,9 @@
         </div>
       </div>
       <h2 class="text-2xl sm:text-3xl font-bold mb-3 md:mb-4">Out of Scope</h2>
-      <p class="text-sm sm:text-base text-gray-400 mb-4 md:mb-6 font-mono leading-relaxed">Consider the attack scenario and real world impact before reporting. Programs not participating in this program are out of scope, you're welcome to report issues, but payouts aren't guaranteed. The following are generally out of scope:</p>
+      <p class="text-sm sm:text-base text-gray-400 mb-4 md:mb-6 font-mono leading-relaxed">
+        Consider the attack scenario and real world impact before reporting. Programs not participating in this program are out of scope, you're welcome to report issues, but payouts aren't guaranteed. The following are generally out of scope:
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 md:mb-8">
         <div class="bg-surface-elevated border border-border p-4">
           <p class="text-sm text-gray-400 font-mono">Scraping public Slack information or account enumeration</p>

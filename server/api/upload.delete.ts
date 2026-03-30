@@ -5,7 +5,7 @@ const schema = z.object({ key: z.string().min(1) });
 
 export default defineEventHandler(async (event) => {
   const s = await requireUserSession(event);
-  const { key } = await readValidatedBody(event, schema.parse);
+  const { key } = await readValidatedBody(event, (body) => schema.parse(body));
   const p = key.startsWith("/api/files/") ? `uploads/${key.replace("/api/files/", "")}` : key;
 
   assertSafe(p);

@@ -26,7 +26,11 @@
           <label for="agree" class="text-sm cursor-pointer" :class="ok ? 'text-white font-semibold' : 'text-gray-400'">I have read and agree to the rules and privacy policy</label>
         </div>
 
-        <button type="submit" :disabled="busy || name.length < 3 || !ok" class="w-full py-3 bg-accent text-black disabled:opacity-75 disabled:cursor-not-allowed font-medium transition-transform active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100 flex items-center justify-center gap-2 cursor-pointer">
+        <button
+          type="submit"
+          :disabled="busy || name.length < 3 || !ok"
+          class="w-full py-3 bg-accent text-black disabled:opacity-75 disabled:cursor-not-allowed font-medium transition-transform active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100 flex items-center justify-center gap-2 cursor-pointer"
+        >
           <Spinner v-if="busy" size="24px" />
           {{ busy ? "" : "Get Started" }}
         </button>

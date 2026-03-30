@@ -82,7 +82,9 @@
       <footer class="border border-border bg-surface/80 backdrop-blur-md fixed bottom-4 left-1/2 -translate-x-1/2 z-10 rounded-lg px-4 py-3">
         <div class="text-sm text-gray-400 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 lg:flex-nowrap">
           <a href="https://hackclub.com" target="_blank" class="hover:text-accent inline-flex items-center gap-1 transition whitespace-nowrap">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C2.4 0 0 2.4 0 12s2.4 12 12 12s12-2.4 12-12S21.6 0 12 0m4.5 19.51h-3.31v-6.507c0-.975-.187-1.622-.834-1.622c-.712 0-1.575 1.003-1.575 2.625v5.503H7.5V4.97l3.29-.563v5.428c.713-.646 1.707-.928 2.72-.928c2.156 0 2.99 1.416 2.99 3.628z" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M12 0C2.4 0 0 2.4 0 12s2.4 12 12 12s12-2.4 12-12S21.6 0 12 0m4.5 19.51h-3.31v-6.507c0-.975-.187-1.622-.834-1.622c-.712 0-1.575 1.003-1.575 2.625v5.503H7.5V4.97l3.29-.563v5.428c.713-.646 1.707-.928 2.72-.928c2.156 0 2.99 1.416 2.99 3.628z" />
+            </svg>
             <span>Aegis by Hack Club</span>
           </a>
           <span class="hidden sm:inline">|</span>

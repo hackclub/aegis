@@ -7,7 +7,10 @@
     <h2 class="text-white font-semibold text-lg">1. Introduction</h2>
     <p>This privacy policy outlines how Aegis handles your data. It is essential that you read and understand this policy, as it pertains to your data. However, if you are short on time, here are the key points.</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
-      <li><strong>Your data is never sold to third parties.</strong> Full stop. Hack Club is funded by generous donations from amazing people and not by advertisers who want your data. While we share data with trusted service providers (subprocessors) to operate Hackatime and deliver Hack Club programs, we never sell your personal information. Your data remains safe and secure with us, and you can request its deletion by contacting us.</li>
+      <li>
+        <strong>Your data is never sold to third parties.</strong> Full stop. Hack Club is funded by generous donations from amazing people and not by advertisers who want your data. While we share data with trusted service providers (subprocessors) to operate Hackatime and deliver Hack Club programs, we never sell
+        your personal information. Your data remains safe and secure with us, and you can request its deletion by contacting us.
+      </li>
       <li><strong>We strive to minimize the amount of information required.</strong> We are not a bank; we do not need everything. We only need some basic info (more on that later!) to keep your account in order; everything else is optional.</li>
       <li><strong>We give you control.</strong> We give you the ability to control your data on Hackatime. We are one of the first Hack Club programs to put you in the driver's seat when it comes to your data, and we want to keep you in the driver’s seat.</li>
       <li><strong>We care.</strong> We are humans at the end of the day who have worked in security and know the consequences of poor data handling. We strive to be better and take responsibility for our actions. This document will hold us to our word.</li>

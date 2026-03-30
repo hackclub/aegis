@@ -29,7 +29,11 @@
     <p><strong>Note:</strong> Programs are free to define their own rules and guidelines, and those rules and guidelines will take precedence over this document. In the event of a dispute of the program's rules and guidelines, the Hack Club Security Team will be the final arbiter.</p>
 
     <h2 class="text-white font-semibold text-lg">4. Safe Harbor</h2>
-    <p>Safe Harbor means we support the protection of organizations and hackers engaged in Good Faith Security Research. “Good Faith Security Research” is accessing a computer solely for purposes of good-faith testing, investigation, and/or correction of a security flaw or vulnerability, where such activity is carried out in a manner designed to avoid any harm to individuals or the public, and where the information derived from the activity is used primarily to promote the security or safety of the class of devices, machines, or online services to which the accessed computer belongs, or those who use such devices, machines, or online services.</p>
+    <p>
+      Safe Harbor means we support the protection of organizations and hackers engaged in Good Faith Security Research. “Good Faith Security Research” is accessing a computer solely for purposes of good-faith testing, investigation, and/or correction of a security flaw or vulnerability, where such activity is carried
+      out in a manner designed to avoid any harm to individuals or the public, and where the information derived from the activity is used primarily to promote the security or safety of the class of devices, machines, or online services to which the accessed computer belongs, or those who use such devices, machines, or
+      online services.
+    </p>
     <p>This means that, for activity conducted while this program is active, we:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li>Will not bring legal action against you or report you for Good Faith Security Research, including for bypassing technological measures we use to protect the applications in scope; and,</li>
@@ -56,26 +60,41 @@
       <li>Donation to a nonprofit on your behalf</li>
       <li><a href="https://zelle.com" target="_blank" class="underline">Zelle</a></li>
     </ul>
-    <p>* We offer Wise as an option for researchers abroad. Wise is a global partner that often supports local payment methods (e.g., UPI in India, Interac in Canada, Alipay and WeChat Pay in China, etc.) which can be cheaper than traditional bank transfers. We also support paying out to a Wise username. Wise charges transaction fees on all transfers; you are responsible for these fees. For example, if the Wise fee on a transfer is 1% and your bounty is $100, you will receive $99. Please confirm your payment method before submitting your report.</p>
-    <p>** Cryptocurrency is offered via <a href="https://www.coinbase.com" target="_blank" class="underline">Coinbase</a> and <a href="https://www.kraken.com" target="_blank" class="underline">Kraken</a>. Only assets that are listed by these platforms will be available. All payouts done in USDC will be free minus any applicable gas fees (average gas fee is less than $0.10), while all other coins will be subject to a 1% trading fee charged by the exchange.</p>
-    <p>Because we're based in the United States, we aren't able to pay bounties to residents or those who report vulnerabilities from a country against which the United States has trade restrictions or export sanctions as determined by the <a href="https://ofac.treasury.gov/" target="_blank" class="underline">U.S. Office of Foreign Assets Control (OFAC)</a>.</p>
+    <p>
+      * We offer Wise as an option for researchers abroad. Wise is a global partner that often supports local payment methods (e.g., UPI in India, Interac in Canada, Alipay and WeChat Pay in China, etc.) which can be cheaper than traditional bank transfers. We also support paying out to a Wise username. Wise charges
+      transaction fees on all transfers; you are responsible for these fees. For example, if the Wise fee on a transfer is 1% and your bounty is $100, you will receive $99. Please confirm your payment method before submitting your report.
+    </p>
+    <p>
+      ** Cryptocurrency is offered via <a href="https://www.coinbase.com" target="_blank" class="underline">Coinbase</a> and <a href="https://www.kraken.com" target="_blank" class="underline">Kraken</a>. Only assets that are listed by these platforms will be available. All payouts done in USDC will be free minus any
+      applicable gas fees (average gas fee is less than $0.10), while all other coins will be subject to a 1% trading fee charged by the exchange.
+    </p>
+    <p>
+      Because we're based in the United States, we aren't able to pay bounties to residents or those who report vulnerabilities from a country against which the United States has trade restrictions or export sanctions as determined by the
+      <a href="https://ofac.treasury.gov/" target="_blank" class="underline">U.S. Office of Foreign Assets Control (OFAC)</a>.
+    </p>
     <p>All payouts are priced in U.S. dollars (USD). You are responsible for the tax consequences of any bounty you receive, as determined by your local tax laws.</p>
 
     <h2 class="text-white font-semibold text-lg">7. Payout Tiers</h2>
-    <p>Payouts are based on demonstrated real world impact, not theoretical risk. All reports must include a valid proof of concept and clear impact analysis to qualify. The following section outlines the base payout for each vulnerability category. Find the row that matches your finding, that's your base payout before quality modifiers are applied.</p>
+    <p>
+      Payouts are based on demonstrated real world impact, not theoretical risk. All reports must include a valid proof of concept and clear impact analysis to qualify. The following section outlines the base payout for each vulnerability category. Find the row that matches your finding, that's your base payout before
+      quality modifiers are applied.
+    </p>
     <p><strong>Note:</strong> These tiers represent default payouts. Individual programs may define their own payout structures that override these defaults. If a program does not specify its own tiers, these will apply.</p>
 
     <h3 class="text-white font-semibold text-base mt-4">Critical</h3>
     <p>Critical vulnerabilities pose an immediate and severe threat to the confidentiality, integrity, or availability of production systems and user data at scale.</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li>
-        <strong>Remote code execution - <span class="text-accent">$1,000</span>.</strong> Root or unprivileged shell on a production server. This includes command injection, deserialization attacks, or any vector that achieves arbitrary code execution on infrastructure we operate. Containerized RCE (within Docker or other containers) may qualify at a reduced payout depending on the level of access achieved and whether container escape is possible.
+        <strong>Remote code execution - <span class="text-accent">$1,000</span>.</strong> Root or unprivileged shell on a production server. This includes command injection, deserialization attacks, or any vector that achieves arbitrary code execution on infrastructure we operate. Containerized RCE (within Docker or
+        other containers) may qualify at a reduced payout depending on the level of access achieved and whether container escape is possible.
       </li>
       <li>
-        <strong>Mass sensitive PII leak - <span class="text-accent">$750</span>.</strong> Unauthorized access to legal IDs, identity verification documents, physical addresses, or similarly sensitive personal information affecting 150 or more users. The data must be demonstrably accessible, theoretical access without a working proof of concept does not qualify. Partial access to sensitive fields (e.g., last four digits of an ID) may qualify at a reduced payout.
+        <strong>Mass sensitive PII leak - <span class="text-accent">$750</span>.</strong> Unauthorized access to legal IDs, identity verification documents, physical addresses, or similarly sensitive personal information affecting 150 or more users. The data must be demonstrably accessible, theoretical access without a
+        working proof of concept does not qualify. Partial access to sensitive fields (e.g., last four digits of an ID) may qualify at a reduced payout.
       </li>
       <li>
-        <strong>Full admin takeover - <span class="text-accent">$500</span>.</strong> Authentication bypasses that grant full admin rights to a program's backend interface, or unrestricted read/write access to production databases. This includes bypassing MFA, forging admin sessions, or exploiting flaws in role-based access control that result in complete privilege escalation to the highest available role.
+        <strong>Full admin takeover - <span class="text-accent">$500</span>.</strong> Authentication bypasses that grant full admin rights to a program's backend interface, or unrestricted read/write access to production databases. This includes bypassing MFA, forging admin sessions, or exploiting flaws in role-based
+        access control that result in complete privilege escalation to the highest available role.
       </li>
     </ul>
 
@@ -83,13 +102,16 @@
     <p>High severity vulnerabilities allow significant unauthorized access to user data or system functionality, but are more limited in scope or require additional conditions compared to critical issues.</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li>
-        <strong>General PII leak - <span class="text-accent">$300</span>.</strong> Unauthorized access to emails, phone numbers, birthdays, or comparable personal information affecting 100 or more users. The leaked data must go beyond what is publicly available or intentionally shared by users. Enumeration of publicly visible profiles does not qualify.
+        <strong>General PII leak - <span class="text-accent">$300</span>.</strong> Unauthorized access to emails, phone numbers, birthdays, or comparable personal information affecting 100 or more users. The leaked data must go beyond what is publicly available or intentionally shared by users. Enumeration of publicly
+        visible profiles does not qualify.
       </li>
       <li>
-        <strong>SQL injection - <span class="text-accent">$250</span>.</strong> Confirmed SQL injection against Postgres, Airtable, or any other data store with demonstrated data access. Your report must include the exact injection point, the payload used, and evidence of data retrieved. Blind SQL injection qualifies if you can demonstrate data exfiltration.
+        <strong>SQL injection - <span class="text-accent">$250</span>.</strong> Confirmed SQL injection against Postgres, Airtable, or any other data store with demonstrated data access. Your report must include the exact injection point, the payload used, and evidence of data retrieved. Blind SQL injection qualifies
+        if you can demonstrate data exfiltration.
       </li>
       <li>
-        <strong>Privilege escalation - <span class="text-accent">$200</span>.</strong> Escalating from a standard user role to non-standard elevated privileges, or accessing another user's account or session. This includes horizontal privilege escalation (accessing peer accounts) and vertical escalation (gaining higher roles). Authentication bypass that grants access to a single non-admin account also falls in this category.
+        <strong>Privilege escalation - <span class="text-accent">$200</span>.</strong> Escalating from a standard user role to non-standard elevated privileges, or accessing another user's account or session. This includes horizontal privilege escalation (accessing peer accounts) and vertical escalation (gaining higher
+        roles). Authentication bypass that grants access to a single non-admin account also falls in this category.
       </li>
     </ul>
 
@@ -97,10 +119,12 @@
     <p>Medium severity vulnerabilities have a real but more contained impact, typically affecting individual users or requiring specific conditions to exploit.</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li>
-        <strong>Stored XSS - <span class="text-accent">$100</span>.</strong> Persistent script execution that runs in the context of other users' browsers. Your report must demonstrate impact beyond a simple alert box - show how the payload could be used to steal sessions, exfiltrate data, or perform actions on behalf of other users. XSS limited to the attacker's own session (self-XSS) does not qualify.
+        <strong>Stored XSS - <span class="text-accent">$100</span>.</strong> Persistent script execution that runs in the context of other users' browsers. Your report must demonstrate impact beyond a simple alert box - show how the payload could be used to steal sessions, exfiltrate data, or perform actions on behalf
+        of other users. XSS limited to the attacker's own session (self-XSS) does not qualify.
       </li>
       <li>
-        <strong>IDOR - <span class="text-accent">$100</span>.</strong> Insecure direct object references that allow reading, modifying, or deleting another user's data by manipulating identifiers (e.g., changing a user ID or object ID in an API request). The affected data must be non-public. Access to your own data via alternate paths does not qualify.
+        <strong>IDOR - <span class="text-accent">$100</span>.</strong> Insecure direct object references that allow reading, modifying, or deleting another user's data by manipulating identifiers (e.g., changing a user ID or object ID in an API request). The affected data must be non-public. Access to your own data via
+        alternate paths does not qualify.
       </li>
       <li>
         <strong>Limited PII leak - <span class="text-accent">$75</span>.</strong> Unauthorized access to personal data affecting fewer than 50 users. The same data sensitivity standards apply as the higher tiers, the data must not be publicly available or intentionally shared.
@@ -111,13 +135,16 @@
     <p>Low severity vulnerabilities have minimal direct impact but may contribute to a broader attack chain or indicate security weaknesses worth addressing.</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li>
-        <strong>Information disclosure - <span class="text-accent">$50</span>.</strong> Exposed configuration files, admin panels, internal paths, stack traces, debug endpoints, or verbose error messages that reveal implementation details. The disclosed information must be useful to an attacker in a way that even if the code is open source a advantage is gained, generic version numbers, or publicly documented endpoints do not qualify.
+        <strong>Information disclosure - <span class="text-accent">$50</span>.</strong> Exposed configuration files, admin panels, internal paths, stack traces, debug endpoints, or verbose error messages that reveal implementation details. The disclosed information must be useful to an attacker in a way that even if
+        the code is open source a advantage is gained, generic version numbers, or publicly documented endpoints do not qualify.
       </li>
       <li>
-        <strong>Reflected XSS / CSRF - <span class="text-accent">$25</span>.</strong> Non-persistent client-side vulnerabilities with limited impact. Reflected XSS must execute in the context of another user via a crafted URL. CSRF must demonstrate a state-changing action (e.g., changing account settings) that can be triggered without the victim's knowledge. Login/logout CSRF does not qualify.
+        <strong>Reflected XSS / CSRF - <span class="text-accent">$25</span>.</strong> Non-persistent client-side vulnerabilities with limited impact. Reflected XSS must execute in the context of another user via a crafted URL. CSRF must demonstrate a state-changing action (e.g., changing account settings) that can be
+        triggered without the victim's knowledge. Login/logout CSRF does not qualify.
       </li>
       <li>
-        <strong>Open redirect - <span class="text-accent">$15</span>.</strong> Unvalidated redirects that could be used in phishing attacks. The redirect must originate from a Hack Club domain and be exploitable without additional user interaction beyond clicking a link. Redirects that only work with user-controlled parameters already visible in the URL bar have reduced impact.
+        <strong>Open redirect - <span class="text-accent">$15</span>.</strong> Unvalidated redirects that could be used in phishing attacks. The redirect must originate from a Hack Club domain and be exploitable without additional user interaction beyond clicking a link. Redirects that only work with user-controlled
+        parameters already visible in the URL bar have reduced impact.
       </li>
     </ul>
 
@@ -126,9 +153,15 @@
     <h2 class="text-white font-semibold text-lg">8. Quality Modifiers</h2>
     <p>Your base payout is multiplied by a quality factor based on the overall quality of your report. A well-written report with clear reproduction steps helps us fix issues faster and earns you more. The quality assessment is made by the triaging security team member and is based on the following criteria:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
-      <li><strong class="text-accent">1.25x - Exceptional.</strong> Clear and working proof of concept, detailed impact analysis explaining what an attacker could achieve, and a git diff or concrete remediation suggestion that fixes the vulnerability. The report is well-structured, easy to follow, and requires minimal back-and-forth from the security team.</li>
+      <li>
+        <strong class="text-accent">1.25x - Exceptional.</strong> Clear and working proof of concept, detailed impact analysis explaining what an attacker could achieve, and a git diff or concrete remediation suggestion that fixes the vulnerability. The report is well-structured, easy to follow, and requires minimal
+        back-and-forth from the security team.
+      </li>
       <li><strong>1.0x - Standard.</strong> Working proof of concept with step-by-step reproduction instructions and a description of the impact. The report contains enough information for the security team to reproduce and understand the issue without significant additional effort.</li>
-      <li><strong>0.8x - Low Quality.</strong> Incomplete report with a vague or missing proof of concept, unclear reproduction steps, or missing impact analysis. Reports that require significant back-and-forth to understand or reproduce fall into this category. We strongly encourage improving your report before submission to avoid this modifier.</li>
+      <li>
+        <strong>0.8x - Low Quality.</strong> Incomplete report with a vague or missing proof of concept, unclear reproduction steps, or missing impact analysis. Reports that require significant back-and-forth to understand or reproduce fall into this category. We strongly encourage improving your report before
+        submission to avoid this modifier.
+      </li>
     </ul>
     <p><strong>Example:</strong> A confirmed SQL injection (base $250) submitted with a detailed PoC, full impact analysis, and a patch would earn 250 × 1.25 = <strong class="text-accent">$312.50</strong>. The same finding submitted with a vague description and no PoC would earn 250 × 0.8 = <strong>$200</strong>.</p>
 
@@ -159,7 +192,10 @@
 
     <h2 class="text-white font-semibold text-lg">11. AI Policy</h2>
     <p>We support AI as a tool to enhance your security research. AI-assisted reconnaissance, payload generation, and report drafting are all acceptable uses. However, submissions that rely solely on AI-generated output with no original testing, validation, or human analysis will be rejected.</p>
-    <p>We value <strong class="text-white">technical expertise, real evidence, and original research</strong>. AI should support your work, not replace it. If we determine that a report was generated entirely by an AI tool without meaningful human review, it will be closed as informative and will not qualify for a payout.</p>
+    <p>
+      We value <strong class="text-white">technical expertise, real evidence, and original research</strong>. AI should support your work, not replace it. If we determine that a report was generated entirely by an AI tool without meaningful human review, it will be closed as informative and will not qualify for a
+      payout.
+    </p>
 
     <h2 class="text-white font-semibold text-lg">12. Contact</h2>
     <p>We are always open to questions or concerns. Please contact us at <a href="mailto:security@hackclub.com" class="underline">security@hackclub.com</a>.</p>
