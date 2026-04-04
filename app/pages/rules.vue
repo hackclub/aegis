@@ -24,11 +24,21 @@
       <li><strong>Do no harm.</strong> Not take unreasonable punitive actions against finders, like making legal threats or referring matters to law enforcement.</li>
     </ul>
 
-    <h2 class="text-white font-semibold text-lg">3. Programs</h2>
-    <p>Hack Club often has multiple programs running at the same time, each with their own rules and guidelines for how to handle security vulnerabilities. This document serves as a baseline for all programs and as the default rules for when a program has not defined its own.</p>
-    <p><strong>Note:</strong> Programs are free to define their own rules and guidelines, and those rules and guidelines will take precedence over this document. In the event of a dispute of the program's rules and guidelines, the Hack Club Security Team will be the final arbiter.</p>
+    <h2 class="text-white font-semibold text-lg">3. Scope</h2>
+    <p>This program uses an <strong>opt-out model</strong>: all actively running Hack Club programs are in scope by default unless a program's page on Aegis explicitly states otherwise. You can browse the full list of participating programs on the <NuxtLink to="/programs" class="underline">programs page</NuxtLink>.</p>
+    <p><strong>Past programs:</strong> Programs that are no longer actively maintained but still have live infrastructure (e.g., running servers, accessible domains) are conditionally in scope. We will accept and triage reports against past programs, but payouts are at the security team's discretion based on whether the finding poses a real-world risk and whether remediation is feasible.</p>
+    <p><strong>Explicitly out-of-scope programs:</strong> If a program's page on Aegis marks it as out of scope, do not test it. Reports against out-of-scope programs will not be eligible for a bounty.</p>
+    <p>This policy governs all programs under Hack Club. Individual programs may publish additional guidelines on their program page (e.g., specific testing restrictions), but this document is the authoritative ruleset. In the event of a conflict, the Hack Club Security Team will be the final arbiter.</p>
 
-    <h2 class="text-white font-semibold text-lg">4. Safe Harbor</h2>
+    <h2 class="text-white font-semibold text-lg">4. Response SLA</h2>
+    <p>We commit to the following response timelines for all valid reports:</p>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li><strong>Acknowledgment:</strong> We will acknowledge receipt of your report within <strong class="text-accent">3 business days</strong>.</li>
+      <li><strong>Resolution & payout:</strong> We aim to triage, resolve, and issue payment within <strong class="text-accent">30 calendar days</strong> of acknowledgment.</li>
+    </ul>
+    <p>If we need more time due to the complexity of the issue, we will communicate the delay and provide an updated timeline. These SLAs apply to Hack Club's security team, individual programs that handle their own triage may have different timelines, which would be noted on their program page.</p>
+
+    <h2 class="text-white font-semibold text-lg">5. Safe Harbor</h2>
     <p>Safe Harbor means we support the protection of organizations and hackers engaged in Good Faith Security Research. “Good Faith Security Research” is accessing a computer solely for purposes of good-faith testing, investigation, and/or correction of a security flaw or vulnerability, where such activity is carried out in a manner designed to avoid any harm to individuals or the public, and where the information derived from the activity is used primarily to promote the security or safety of the class of devices, machines, or online services to which the accessed computer belongs, or those who use such devices, machines, or online services.</p>
     <p>This means that, for activity conducted while this program is active, we:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
@@ -36,7 +46,7 @@
       <li>Will take steps to make known that you conducted Good Faith Security Research if someone else brings legal action against you.</li>
     </ul>
 
-    <h2 class="text-white font-semibold text-lg">5. Conflicts of Interest</h2>
+    <h2 class="text-white font-semibold text-lg">6. Conflicts of Interest</h2>
     <p>Having a conflict of interest means that you have a personal stake in the program or have access to information that would be a unfair advantage to other researchers. You are ineligible for bounties if you:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li>Are currently, or within the past 6 months have been, an employee, contractor, intern, or vendor of the program you are reporting to</li>
@@ -45,7 +55,7 @@
     </ul>
     <p>If you have any relationship with Hack Club or a program that could be perceived as a conflict, please disclose it in your report. Programs may define additional restrictions at their discretion.</p>
 
-    <h2 class="text-white font-semibold text-lg">6. Payments</h2>
+    <h2 class="text-white font-semibold text-lg">7. Payments</h2>
     <p>Some programs may offer bounties for security research, while others may not. It is up to the program to decide whether or not to offer bounties.</p>
     <p>If a program chooses to offer bounties, Aegis will handle the payment of bounties to the researcher. The researcher can choose to receive the bounty in the following ways:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
@@ -61,7 +71,7 @@
     <p>Because we're based in the United States, we aren't able to pay bounties to residents or those who report vulnerabilities from a country against which the United States has trade restrictions or export sanctions as determined by the <a href="https://ofac.treasury.gov/" target="_blank" class="underline">U.S. Office of Foreign Assets Control (OFAC)</a>.</p>
     <p>All payouts are priced in U.S. dollars (USD). You are responsible for the tax consequences of any bounty you receive, as determined by your local tax laws.</p>
 
-    <h2 class="text-white font-semibold text-lg">7. Payout Tiers</h2>
+    <h2 class="text-white font-semibold text-lg">8. Payout Tiers</h2>
     <p>Payouts are based on demonstrated real world impact, not theoretical risk. All reports must include a valid proof of concept and clear impact analysis to qualify. The following section outlines the base payout for each vulnerability category. Find the row that matches your finding, that's your base payout before quality modifiers are applied.</p>
     <p><strong>Note:</strong> These tiers represent default payouts. Individual programs may define their own payout structures that override these defaults. If a program does not specify its own tiers, these will apply.</p>
 
@@ -123,7 +133,7 @@
 
     <p>Even if your finding doesn't fit neatly into the categories above, we may still consider it if it demonstrates a valid security issue with clear, real world impact. When in doubt, submit the report - we'd rather review an edge case than miss a legitimate vulnerability.</p>
 
-    <h2 class="text-white font-semibold text-lg">8. Quality Modifiers</h2>
+    <h2 class="text-white font-semibold text-lg">9. Quality Modifiers</h2>
     <p>Your base payout is multiplied by a quality factor based on the overall quality of your report. A well-written report with clear reproduction steps helps us fix issues faster and earns you more. The quality assessment is made by the triaging security team member and is based on the following criteria:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li><strong class="text-accent">1.25x - Exceptional.</strong> Clear and working proof of concept, detailed impact analysis explaining what an attacker could achieve, and a git diff or concrete remediation suggestion that fixes the vulnerability. The report is well-structured, easy to follow, and requires minimal back-and-forth from the security team.</li>
@@ -132,7 +142,7 @@
     </ul>
     <p><strong>Example:</strong> A confirmed SQL injection (base $250) submitted with a detailed PoC, full impact analysis, and a patch would earn 250 × 1.25 = <strong class="text-accent">$312.50</strong>. The same finding submitted with a vague description and no PoC would earn 250 × 0.8 = <strong>$200</strong>.</p>
 
-    <h2 class="text-white font-semibold text-lg">9. Reporting Requirements</h2>
+    <h2 class="text-white font-semibold text-lg">10. Reporting Requirements</h2>
     <p>To be eligible for a payout, your report must include the following at a minimum:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li><strong>Description:</strong> A clear summary of the vulnerability, including the affected component, endpoint, or system.</li>
@@ -141,7 +151,7 @@
     </ul>
     <p>Reports that are missing critical information may be returned to you for clarification or have a reduced payout. Duplicate reports are resolved in favor of first in best dressed.</p>
 
-    <h2 class="text-white font-semibold text-lg">10. Out of Scope</h2>
+    <h2 class="text-white font-semibold text-lg">11. Out of Scope</h2>
     <p>Consider the attack scenario and real world impact before reporting. Programs not participating in this program are out of scope, you're welcome to report issues on non-participating programs, but payouts aren't guaranteed. The following are generally considered out of scope across all programs:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li><strong>Scraping or enumeration:</strong> Scraping publicly available Slack information, account enumeration via login or signup forms, or any technique that only reveals whether an account exists.</li>
@@ -157,14 +167,14 @@
       <li><strong>Rate limiting:</strong> Absence of rate limiting on non-sensitive endpoints without demonstrated abuse potential.</li>
     </ul>
 
-    <h2 class="text-white font-semibold text-lg">11. AI Policy</h2>
+    <h2 class="text-white font-semibold text-lg">12. AI Policy</h2>
     <p>We support AI as a tool to enhance your security research. AI-assisted reconnaissance, payload generation, and report drafting are all acceptable uses. However, submissions that rely solely on AI-generated output with no original testing, validation, or human analysis will be rejected.</p>
     <p>We value <strong class="text-white">technical expertise, real evidence, and original research</strong>. AI should support your work, not replace it. If we determine that a report was generated entirely by an AI tool without meaningful human review, it will be closed as informative and will not qualify for a payout.</p>
 
-    <h2 class="text-white font-semibold text-lg">12. Contact</h2>
+    <h2 class="text-white font-semibold text-lg">13. Contact</h2>
     <p>We are always open to questions or concerns. Please contact us at <a href="mailto:security@hackclub.com" class="underline">security@hackclub.com</a>.</p>
 
-    <p class="text-gray-500 text-xs pt-4 border-t border-border">Last updated: Mar 2026</p>
+    <p class="text-gray-500 text-xs pt-4 border-t border-border">Last updated: Apr 2026</p>
   </div>
 </template>
 
