@@ -33,12 +33,12 @@ export default defineNuxtConfig({
     ],
     optimizeDeps: {
       include: [
-        '@vue/devtools-core',
-        '@vue/devtools-kit',
-        '@vercel/analytics/vue',
-        '@vercel/speed-insights/vue',
-        'nprogress', // CJS
-      ]
+        "@vue/devtools-core",
+        "@vue/devtools-kit",
+        "@vercel/analytics/vue",
+        "@vercel/speed-insights/vue",
+        "nprogress", // CJS
+      ],
     },
   },
 
