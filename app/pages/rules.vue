@@ -133,13 +133,13 @@
     <p><strong>Example:</strong> A confirmed SQL injection (base $250) submitted with a detailed PoC, full impact analysis, and a patch would earn 250 × 1.25 = <strong class="text-accent">$312.50</strong>. The same finding submitted with a vague description and no PoC would earn 250 × 0.8 = <strong>$200</strong>.</p>
 
     <h2 class="text-white font-semibold text-lg">9. Reporting Requirements</h2>
-    <p>To be eligible for a payout, your report must include the following at a minimum:</p>
+    <p>All reports must be submitted through the <NuxtLink to="/programs" class="underline">Aegis platform</NuxtLink>. Select the affected program, fill out the submission form, and include the following at a minimum:</p>
     <ul class="list-disc list-inside space-y-2 ml-4">
       <li><strong>Description:</strong> A clear summary of the vulnerability, including the affected component, endpoint, or system.</li>
       <li><strong>Proof of Concept:</strong> A working PoC that demonstrates the vulnerability. This can be a script, a series of HTTP requests, screenshots with timestamps, or a screen recording. The PoC must be reproducible by the security team.</li>
       <li><strong>Impact Statement:</strong> A description of what an attacker could achieve by exploiting the vulnerability and who is affected (e.g., all users, admins only, users of a specific program).</li>
     </ul>
-    <p>Reports that are missing critical information may be returned to you for clarification or have a reduced payout. Duplicate reports are resolved in favor of first in best dressed.</p>
+    <p>Do not submit reports via email; <a href="mailto:security@hackclub.com" class="underline">security@hackclub.com</a> is reserved for general questions and is not monitored for vulnerability submissions. Reports that are missing critical information may be returned to you for clarification or have a reduced payout. Duplicate reports are resolved in favor of first in best dressed.</p>
 
     <h2 class="text-white font-semibold text-lg">10. Out of Scope</h2>
     <p>Consider the attack scenario and real world impact before reporting. Programs not participating in this program are out of scope, you're welcome to report issues on non-participating programs, but payouts aren't guaranteed. The following are generally considered out of scope across all programs:</p>
@@ -162,7 +162,7 @@
     <p>We value <strong class="text-white">technical expertise, real evidence, and original research</strong>. AI should support your work, not replace it. If we determine that a report was generated entirely by an AI tool without meaningful human review, it will be closed as informative and will not qualify for a payout.</p>
 
     <h2 class="text-white font-semibold text-lg">12. Contact</h2>
-    <p>We are always open to questions or concerns. Please contact us at <a href="mailto:security@hackclub.com" class="underline">security@hackclub.com</a>.</p>
+    <p>For questions, concerns, or anything that isn't a vulnerability report, reach us at <a href="mailto:security@hackclub.com" class="underline">security@hackclub.com</a>. To submit a vulnerability report, use the <NuxtLink to="/programs" class="underline">Aegis platform</NuxtLink>.</p>
 
     <p class="text-gray-500 text-xs pt-4 border-t border-border">Last updated: Mar 2026</p>
   </div>
