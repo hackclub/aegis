@@ -29,7 +29,7 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "eslint": "^10.1.0",
-    "marked": "^17.0.5",
+    "marked": "^17.0.6",
     "nprogress": "^0.2.0",
     "nuxt": "^4.4.2",
     "nuxt-auth-utils": "^0.5.29",
