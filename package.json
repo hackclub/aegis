@@ -33,7 +33,7 @@
     "nprogress": "^0.2.0",
     "nuxt": "^4.4.2",
     "nuxt-auth-utils": "^0.5.29",
-    "prisma": "^7.5.0",
+    "prisma": "^7.7.0",
     "tailwindcss": "^4.2.2",
     "vue": "^3.5.32",
     "vue-router": "^5.0.4",
